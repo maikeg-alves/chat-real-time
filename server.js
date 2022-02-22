@@ -15,7 +15,7 @@ app.use('/', (reg, res) => {
     res.render('index.html');
 })
 
-let messages = []
+let messages = [] 
 
 io.on('connection', socket => {
     console.log(`Socket conectado: ${socket.id}`)
