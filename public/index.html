@@ -32,9 +32,10 @@
            }
         })
 
+        
         socket.on('receivedMessage', function(mensage){
             RenderMessage(mensage)
-        })
+        }) 
 
         $('#chat').submit(function(event) {
             event.preventDefault()

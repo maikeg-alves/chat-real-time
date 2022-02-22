@@ -27,6 +27,7 @@ io.on('connection', socket => {
         socket.broadcast.emit('receivedMessage', data)
     })
 })
+ 
 
 server.listen(3000, function(){
     console.log('Você está conectado a porta 3000')
